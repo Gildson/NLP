@@ -1,0 +1,12 @@
+import transformers
+from transformers import pipeline
+
+model_name = 'pierreguillou/bert-large-cased-squad-v1.1-portuguese'
+qea = pipeline('question-answering', model=model_name)
+
+text = "Quando jejuarem, não mostrem uma aparência triste como os hipócritas."
+question = "O que devemos fazer quando jejuarmos?"
+answer = qea(question=question, context=text)
+print(f"Pergunta: {question}")
+print(f"Resposta: {answer['answer']}")
+print(f"Score: {answer['score']}")
