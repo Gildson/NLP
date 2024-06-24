@@ -1,0 +1,1 @@
+Vamos realizar uma análise de sentimentos utilizando o VADER (Valence Aware Dictionary and sEntiment Reasoner), uma ferramenta de análise de sentimentos especialmente eficaz em dados de mídia social e textos informais.
